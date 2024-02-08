@@ -15,12 +15,11 @@ public abstract class Animal {
         return commands;
     }
 
-    public void setSkills(String newCommands) {
+    public void setCommands(String newCommands) {
         this.commands = newCommands;
     }
-
-    public abstract void displayCommands();
-
-    public abstract void teachNewCommands(String command);
 }
 
+public abstract void displayCommands();
+
+public abstract void teachNewCommands(String command);
