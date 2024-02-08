@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2024-02-08T06:35:48.816Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="-0854MxwxbgFyBV8YtWJ" version="21.6.8" type="device">
+  <diagram name="Страница — 1" id="Gdzn4zbxFwBAR6WnSzGs">
+    <mxGraphModel dx="2253" dy="871" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YM0zuoXpmqvemHoane1w-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-2" target="YM0zuoXpmqvemHoane1w-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-2" value="Class Dogs" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-3" target="YM0zuoXpmqvemHoane1w-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-3" value="Class Pets" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-4" target="YM0zuoXpmqvemHoane1w-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-4" value="Class PackAnimals" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="865" y="120" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-5" target="YM0zuoXpmqvemHoane1w-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-5" value="Class Cats" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="240" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-6" target="YM0zuoXpmqvemHoane1w-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-6" value="Class Hamsters" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-7" value="Class Animals" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="40" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-8" target="YM0zuoXpmqvemHoane1w-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-8" value="Class Horses" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="240" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-10" target="YM0zuoXpmqvemHoane1w-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-10" value="Class Camels" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="240" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YM0zuoXpmqvemHoane1w-11" target="YM0zuoXpmqvemHoane1w-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YM0zuoXpmqvemHoane1w-11" value="Class Donkeys" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="240" width="200" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
