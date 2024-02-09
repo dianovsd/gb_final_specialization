@@ -1,4 +1,6 @@
-public class Cat extends Pet {
+package Animals;
+
+public class Cat extends Donkey.Pet {
     public Cat(String name, String commands){
         super(name, commands);
     }
@@ -14,5 +16,11 @@ public class Cat extends Pet {
         String updatedCommands = getCommands() + "," + command;
         setCommands(updatedCommands);
         System.out.println("Кошка " + getName() + " научилась: " + command);
+    }
+
+    public abstract static class PackAnimal extends Animal {
+        public PackAnimal(String name, String commands) {
+            super(name, commands);
+        }
     }
 }

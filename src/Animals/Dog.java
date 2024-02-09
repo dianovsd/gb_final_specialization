@@ -1,5 +1,6 @@
+package Animals;
 
-public class Dog extends Pet {
+public class Dog extends Donkey.Pet {
     public Dog(String name, String commands) {
         super(name, commands);
     }
