@@ -87,7 +87,6 @@ public class Program {
             int choiceType = ChoiceInMenu();
             switch (choiceType) {
                 case 1:
-                    //noinspection TextLabelInSwitchStatement
                     loopPets:
                     while (true) {
                         ShowPets();
@@ -108,7 +107,6 @@ public class Program {
                     }
                     break;
                 case 2:
-                    //noinspection TextLabelInSwitchStatement
                     loopPackAnimal:
                     while (true) {
                         ShowPackAnimals();
