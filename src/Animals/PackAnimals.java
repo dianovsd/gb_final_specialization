@@ -1,4 +1,4 @@
-package Classes;
+package Animals;
 
 abstract public class PackAnimals extends Animal {
 

@@ -1,20 +1,10 @@
 package Animals;
 
-public class Dog extends Donkey.Pet {
-    public Dog(String name, String commands) {
-        super(name, commands);
-    }
 
-    @Override
-    public void displayCommands() {
-        System.out.println("Собака " + getName() + "умеет: " + getCommands());
-    }
+public class Dog extends Pets {
 
-
-    @Override
-    public void teachNewCommands(String command) {
-        String updatedCommands = getCommands() + "," + command;
-        setCommands(updatedCommands);
-        System.out.println("Собака " + getName() + " научилась: " + command);
+    public Dog(String name) {
+        super(name);
+        super.setKindAnimal("Dog");
     }
 }
