@@ -2,6 +2,7 @@ package Control;
 
 public class Counter implements AutoCloseable{
     private static int counter = 0;
+    private boolean isOpen = true;
 
     public Counter() {
     }
@@ -18,5 +19,10 @@ public class Counter implements AutoCloseable{
 
     @Override
     public void close() throws Exception {
+        if (isOpen) {
+            isOpen = false;
+        } else {
+            throw new RuntimeException("Ресурс уже закрыт");
+        }
     }
 }

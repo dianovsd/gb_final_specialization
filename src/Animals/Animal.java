@@ -1,7 +1,6 @@
 package Animals;
 
 import java.util.LinkedList;
-import java.util.Scanner;
 
 abstract public class Animal {
     private String name;

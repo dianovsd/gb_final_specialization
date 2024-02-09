@@ -10,7 +10,7 @@ public class Menu {
         System.out.println("1. Поселить животное");
         System.out.println("2. Добавить навык");
         System.out.println("3. Показать весь список животных");
-        System.out.println("4. Показать список комангд конкретного животного");
+        System.out.println("4. Показать список команд конкретного животного");
         System.out.println("0. Выход\n");
     }
 

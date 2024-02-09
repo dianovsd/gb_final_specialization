@@ -21,34 +21,51 @@ public class Program {
                     try (Counter count = new Counter()) {
                         System.out.println("Начинаем процедуру добавления животного");
                         Animal tmp = AddAnimal();
+
                         if (tmp != null) {
                             System.out.println("Укажите список команд, которые умеет делать животное");
-                            tmp.addCommands(GetString().split(","));
-                            if (tmp.getName().length() == 0) throw new RuntimeException("Не указано имя");
-                            if (tmp.getCommands().size() == 0) throw new RuntimeException("Не указаны команды");
+                            String[] commands = GetString().split(",");
+                            tmp.addCommands(commands);
+
+                            if (tmp.getName().isEmpty()) {
+                                throw new RuntimeException("Не указано имя");
+                            }
+
+                            if (tmp.getCommands().isEmpty()) {
+                                throw new RuntimeException("Не указаны команды");
+                            }
+
                             count.add();
                             lstAnimals.add(tmp);
                         }
-                    } catch (Exception e) {
+                    } catch (RuntimeException e) {
                         System.out.println(e.getMessage());
-                        System.out.println("Повторите попытку");
+                    } catch (Exception e) {
+                        System.out.println("Произошла ошибка. Повторите попытку");
                         System.out.println();
                     }
                 }
                 case 2 -> {
-                    if (lstAnimals.size() != 0) {
-                        System.out.println("Выберите животное");
-                        System.out.println("Список животных:\n");
-                        ShowListAnimals(lstAnimals);
-                        int numAnimal = ChoiceInMenu();
-                        if (numAnimal >= 0 && numAnimal < lstAnimals.size()) {
-                            System.out.println("Укажите список команд, которые умеет делать животное");
-                            String commands = GetString();
-                            lstAnimals.get(numAnimal).addCommands(commands.split(","));
-                        } else {
-                            System.out.println("Животного с данным номером нет");
-                        }
-                    } else System.out.println("Животных нет\n");
+                    if (lstAnimals.isEmpty()) {
+                        System.out.println("Животных нет\n");
+                        break;
+                    }
+
+                    System.out.println("Выберите животное");
+                    System.out.println("Список животных:\n");
+                    ShowListAnimals(lstAnimals);
+
+                    int numAnimal = ChoiceInMenu();
+
+                    if (numAnimal < 0 || numAnimal >= lstAnimals.size()) {
+                        System.out.println("Животного с данным номером нет");
+                        break;
+                    }
+
+                    System.out.println("Укажите список команд, которые умеет делать животное");
+                    String commands = GetString();
+                    String[] commandList = commands.split(",\\s*"); // Разделение команд с учетом пробелов
+                    lstAnimals.get(numAnimal).addCommands(commandList);
                 }
                 case 3 -> {
                     if (lstAnimals.size() != 0) {
@@ -57,18 +74,24 @@ public class Program {
                     } else System.out.println("Животных нет\n");
                 }
                 case 4 -> {
-                    if (lstAnimals.size() != 0) {
-                        System.out.println("Выберите животное");
-                        System.out.println("Список животных:\n");
-                        ShowListAnimals(lstAnimals);
-                        int numAnimal = ChoiceInMenu();
-                        if (numAnimal >= 0 && numAnimal < lstAnimals.size()) {
-                            System.out.println(lstAnimals.get(numAnimal));
-                            ShowListMakeCommands(lstAnimals.get(numAnimal));
-                        } else {
-                            System.out.println("Животного с данным номером нет");
-                        }
-                    } else System.out.println("Животных нет\n");
+                    if (lstAnimals.isEmpty()) {
+                        System.out.println("Животных нет\n");
+                        break;
+                    }
+
+                    System.out.println("Напишите номер животного из списка ниже");
+                    System.out.println("Список животных:\n");
+                    ShowListAnimals(lstAnimals);
+
+                    int numAnimal = ChoiceInMenu();
+
+                    if (numAnimal < 0 || numAnimal >= lstAnimals.size()) {
+                        System.out.println("Животного с данным номером нет");
+                        break;
+                    }
+
+                    System.out.println(lstAnimals.get(numAnimal));
+                    ShowListMakeCommands(lstAnimals.get(numAnimal));
                 }
                 case 0 -> {
                     System.out.println("Досвидания");
