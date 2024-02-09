@@ -21,7 +21,7 @@ public class Menu {
         System.out.println("0. Назад\n");
     }
 
-    public static void ShowKindPets() {
+    public static void ShowPets() {
         System.out.println("Выберите животное:");
         System.out.println("1. Собака");
         System.out.println("2. Кошка");
@@ -29,8 +29,8 @@ public class Menu {
         System.out.println("0. Назад\n");
     }
 
-    public static void ShowKindPackAnimals() {
-        System.out.println("НВыберите животно:");
+    public static void ShowPackAnimals() {
+        System.out.println("Выберите животное:");
         System.out.println("1. Лошадь");
         System.out.println("2. Осел");
         System.out.println("3. Верблюд");
